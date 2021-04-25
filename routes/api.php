@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\Api\BookController;
+use App\Http\Controllers\Api\UserController;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +17,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
+/*Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
+});*/
+//Route::resourse('books','BookController');
+
+/*Route::middleware('auth:api')->group(function () {
+    Auth::routes();
+    Route::get('books/add', [BookController::class, 'add'])->name("add");
+    Route::get('books/store', [BookController::class, 'store'])->name("store");
+});*/
+
+Route::middleware('auth:api')->group(function () {
+    Route::get('user', [UserController::class,'details']);
+   // Route::resource('books',BookController::class,'');
+    Auth::routes();
+    Route::get('books/add', [BookController::class, 'add'])->name("add");
+    Route::get('books/store', [BookController::class, 'store'])->name("store");
 });
+
+Route::post('login', [UserController::class,'login']);
+Route::post('register',[UserController::class,'register']);
+
+
+
