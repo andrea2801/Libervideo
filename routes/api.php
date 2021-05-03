@@ -16,25 +16,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/*Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});*/
-//Route::resourse('books','BookController');
-
-/*Route::middleware('auth:api')->group(function () {
-    Auth::routes();
-    Route::get('books/add', [BookController::class, 'add'])->name("add");
-    Route::get('books/store', [BookController::class, 'store'])->name("store");
-});*/
 
 Route::middleware('auth:api')->group(function () {
 
-    Route::get('/user', function (Request $request) {
-        return $request->user();
-    });
+Route::get('/user/details', [UserController::class,'details']);
+    Route::get('/user/index', [UserController::class,'index']);
+Route::resource('books','App\Http\Controllers\Api\BookController');
+
 });
-    Route::resource('/books','App\Http\Controllers\Api\BookController');
 Route::post('login', [UserController::class,'login']);
 Route::post('register',[UserController::class,'register']);
- Route::post('details', [UserController::class,'details']);
 

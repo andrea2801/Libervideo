@@ -1,10 +1,11 @@
 <?php
-
 namespace App\Http\Controllers\Api;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Contracts\Validation\{Validator};
 
 class UserController extends BaseController
 {
@@ -24,18 +25,18 @@ class UserController extends BaseController
 
         $token = $user->createToken('AppNAME')->accessToken;
 
-        return response()->json(['token' => $token], 200);
+        return response()->json(['token' => $token,'name'=> $dataValidated['name'],'email'=> $dataValidated['email']], 200);
     }
 
     /**
      * @param Request $request
-     * @return \Illuminate\Http\JsonResponse|\Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function login(Request $request){
         if(Auth::attempt(['email' => $request->email, 'password' => $request->password])){
 
             $user = Auth::user();
-            $success['token'] =  $user->createToken('AppName')-> accessToken;
+            $success['token'] =  $user->createToken('AppName')->accessToken;
             $success['user'] =  $user->email;
 
             return $this->sendResponse($success, 'User login successfully.');
@@ -44,6 +45,7 @@ class UserController extends BaseController
             return $this->sendError('Unauthorised.', ['error'=>'Unauthorised']);
         }
     }
+
     /**
      * Returns Authenticated User Details
      *
@@ -53,5 +55,13 @@ class UserController extends BaseController
     {
         return response()->json(['user' => auth()->user()], 200);
     }
-}
+    public function index()
+    {
+        $users = User::all();
+        return response()->json([
+            'success' => true,
+            'data' => $users->toArray()
+        ], 200);
+    }
 
+}
