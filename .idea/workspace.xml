@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f0c10e5-bdce-49b1-9c9f-245b41f284e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/store.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,11 +150,15 @@
     <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views" />
     </key>
@@ -187,7 +179,7 @@
       <updated>1617904475975</updated>
       <workItem from="1617904477913" duration="10743000" />
       <workItem from="1619372263188" duration="6552000" />
-      <workItem from="1619383623607" duration="3809000" />
+      <workItem from="1619383623607" duration="10381000" />
     </task>
     <servers />
   </component>
@@ -204,9 +196,14 @@
       <screen x="0" y="0" width="1920" height="974" />
     </state>
     <state x="705" y="137" width="498" height="699" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.974@0.0.1920.974" timestamp="1619374576432" />
-    <state x="743" y="245" width="428" height="483" key="FileChooserDialogImpl" timestamp="1619360925456">
-      <screen x="0" y="0" width="1920" height="974" />
+    <state x="323" y="73" width="628" height="483" key="DUMP_DIALOG_DIMENSION_KEY" timestamp="1619450737175">
+      <screen x="0" y="0" width="1280" height="629" />
     </state>
+    <state x="323" y="73" width="628" height="483" key="DUMP_DIALOG_DIMENSION_KEY/0.0.1280.629@0.0.1280.629" timestamp="1619450737175" />
+    <state x="495" y="158" width="304" height="312" key="FileChooserDialogImpl" timestamp="1619452044380">
+      <screen x="0" y="0" width="1280" height="629" />
+    </state>
+    <state x="495" y="158" width="304" height="312" key="FileChooserDialogImpl/0.0.1280.629@0.0.1280.629" timestamp="1619452044380" />
     <state x="743" y="245" width="428" height="483" key="FileChooserDialogImpl/0.0.1920.974@0.0.1920.974" timestamp="1619360925456" />
     <state width="256" height="477" key="HiddenNamespacesPopup" timestamp="1618241403695">
       <screen x="0" y="0" width="959" height="606" />
